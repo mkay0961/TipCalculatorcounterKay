@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size20"
+    android:paddingLeft="@dimen/size16"
+    android:paddingRight="@dimen/size16"
+    android:paddingTop="@dimen/size20"
+    tools:context="com.example.matthewkay.tipcalculator_counter.Main2Activity">
+
+
+    <TextView
+        android:id="@+id/billBeforeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black"
+
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/billBeforeTip" />
+
+
+    <TextView
+        android:id="@+id/numSplitID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black"
+        android:layout_marginTop="@dimen/size35"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/colorPrimary"
+        android:hint="@string/numPeople"
+        />
+
+    <TextView
+        android:id="@+id/tipID"
+        android:textSize="@dimen/textsize"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size35"
+        android:background="@color/Black"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:hint="@string/tip"
+        />
+    <TextView
+        android:id="@+id/tipCostID"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size35"
+        android:layout_height="wrap_content"
+        android:hint="@string/tipCost"
+        />
+
+    <TextView
+        android:id="@+id/billAfterID"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:background="@color/Black"
+        android:layout_marginTop="@dimen/size35"
+        android:layout_height="wrap_content"
+        android:hint="@string/billAfterTip"
+        />
+
+    <TextView
+        android:id="@+id/afterPerPersonID"
+        android:textSize="@dimen/textsize"
+        android:layout_marginTop="@dimen/size35"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/billPerPerson"
+        />
+
+    <Button
+        android:id="@+id/backID"
+        android:layout_width="@dimen/size125"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size20"
+        android:textColorHighlight="@color/Red"
+        android:textColor="@color/White"
+        android:background="@color/Black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/back"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

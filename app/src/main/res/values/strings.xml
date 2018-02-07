@@ -1,3 +1,42 @@
 <resources>
+
     <string name="app_name">TipCalculator-counter</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="dollarPrefix">$ </string>
+    <string name="percent10">10%</string>
+    <string name="percent15">15%</string>
+    <string name="percent20">20%</string>
+    <string name="num10">10</string>
+    <string name="num15">15</string>
+    <string name="num20">20</string>
+    <string name="percentCustom">Custom</string>
+    <string name="percentSign">%</string>
+    <string name="percentCustomNum">Custom Percent</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back To Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="tipCost">You Should Tip:  $</string>
+    <string name="billBeforeTip">Bill Amount Before Tip:  $</string>
+    <string name="tip">Tip:  </string>
+    <string name="numPeople">Number Of People:  </string>
+    <string name="billAfterTip">Bill Including Tip:  $</string>
+    <string name="billPerPerson">Each Person Owes:  $</string>
+    <string name="split_amount">Number Of People Splitting The Bill</string>
+    <string name="blank"></string>
+    <string name="billKEY">billKEY</string>
+    <string name="numberOfPeopleKEY">numberOfPeopleKEY</string>
+    <string name="tipPercentKEY">tipPercentKEY</string>
+    <string name="billAfterKEY">billAfterKEY</string>
+    <string name="personOweKEY">personOweKEY</string>
+    <string name="tipCostKEY">tipCostKEY</string>
+    <string name="BILLAMOUNTKEY">BILLAMOUNTKEY</string>
+    <string name="NUMPEOPLEKEY">NUMPEOPLEKEY</string>
+    <string name="CUSTOMTIPKEY">CUSTOMTIPKEY</string>
+
+
+
+
+
+
+
 </resources>
