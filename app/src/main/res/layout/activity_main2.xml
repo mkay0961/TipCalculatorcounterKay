@@ -19,7 +19,7 @@
         android:background="@color/Black"
 
         android:textSize="@dimen/textsize"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/White"
         android:text="@string/billBeforeTip" />
 
 
@@ -30,7 +30,7 @@
         android:background="@color/Black"
         android:layout_marginTop="@dimen/size35"
         android:textSize="@dimen/textsize"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/White"
         android:hint="@string/numPeople"
         />
 
@@ -40,14 +40,14 @@
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/size35"
         android:background="@color/Black"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/White"
         android:layout_height="wrap_content"
         android:hint="@string/tip"
         />
     <TextView
         android:id="@+id/tipCostID"
         android:textSize="@dimen/textsize"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/White"
         android:background="@color/Black"
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/size35"
@@ -58,7 +58,7 @@
     <TextView
         android:id="@+id/billAfterID"
         android:textSize="@dimen/textsize"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/White"
         android:layout_width="match_parent"
         android:background="@color/Black"
         android:layout_marginTop="@dimen/size35"
@@ -70,7 +70,7 @@
         android:id="@+id/afterPerPersonID"
         android:textSize="@dimen/textsize"
         android:layout_marginTop="@dimen/size35"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/White"
         android:background="@color/Black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

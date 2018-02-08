@@ -47,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast toast= Toast.makeText(getApplicationContext(),"RESET!!",Toast.LENGTH_SHORT);
+                Toast toast= Toast.makeText(getApplicationContext(),getString(R.string.RESET),Toast.LENGTH_SHORT);
                 toast.show();
 
-                billAmount.setText("");
-                numPeople.setText("");
+                billAmount.setText(getString(R.string.blank));
+                numPeople.setText(getString(R.string.blank));
                 radioGroup.clearCheck();
                 customTip.setVisibility(View.INVISIBLE);
-                customTip.setText("");
+                customTip.setText(getString(R.string.blank));
             }
         });
 
@@ -71,30 +71,30 @@ public class MainActivity extends AppCompatActivity {
 
                 if (i == R.id.percent10ID) {
                     customTip.setVisibility(View.INVISIBLE);
-                    customTip.setText("10");
+                    customTip.setText(getString(R.string.num10));
 
-                    Toast toast=Toast.makeText(getApplicationContext(),"10% TIP!!",Toast.LENGTH_SHORT);
+                    Toast toast=Toast.makeText(getApplicationContext(),R.string.percent10mess,Toast.LENGTH_SHORT);
                     toast.show();
 
                 } else if (i == R.id.percent15ID) {
                     customTip.setVisibility(View.INVISIBLE);
-                    customTip.setText("15");
+                    customTip.setText(getString(R.string.num15));
 
-                    Toast toast=Toast.makeText(getApplicationContext(),"15% TIP!!",Toast.LENGTH_SHORT);
+                    Toast toast=Toast.makeText(getApplicationContext(),R.string.percent15mess,Toast.LENGTH_SHORT);
                     toast.show();
 
                 } else if (i == R.id.percent20ID) {
                     customTip.setVisibility(View.INVISIBLE);
-                    customTip.setText("20");
+                    customTip.setText(getString(R.string.num20));
 
-                    Toast toast=Toast.makeText(getApplicationContext(),"20% TIP!!",Toast.LENGTH_SHORT);
+                    Toast toast=Toast.makeText(getApplicationContext(),R.string.percent20mess,Toast.LENGTH_SHORT);
                     toast.show();
 
                 } else if (i == R.id.percentCustomID) {
-                    customTip.setText("");
+                    customTip.setText(getString(R.string.blank));
                     customTip.setVisibility(View.VISIBLE);
 
-                    Toast toast=Toast.makeText(getApplicationContext(),"CUSTOM TIP!!",Toast.LENGTH_SHORT);
+                    Toast toast=Toast.makeText(getApplicationContext(),R.string.percentCustomMess,Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Toast toast=Toast.makeText(getApplicationContext(),"CALCULATING INFO",Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getApplicationContext(),R.string.Calcinfo,Toast.LENGTH_SHORT);
                 toast.show();
 
                 tipPercent = Double.parseDouble(customTip.getText().toString());
@@ -113,23 +113,23 @@ public class MainActivity extends AppCompatActivity {
                 bill = Double.parseDouble(billAmount.getText().toString());
 
                 if (numberOfPeople < 1) {
-                    showErrorAlert("Not Enough People!!!!", 1);
+                    showErrorAlert(getString(R.string.PeopleERROR), 1);
                 } else if (tipPercent < 1) {
-                    showErrorAlert("Tip Percentage Isnt High Enough!!!", 2);
+                    showErrorAlert(getString(R.string.TipERROR), 2);
                 } else if (bill < 1) {
-                    showErrorAlert("Bill Isnt High Enough!!!", 3);
+                    showErrorAlert(getString(R.string.BillERROR), 3);
                 } else if ((numberOfPeople >= 1) && (tipPercent >= 1) && (bill >= 1)) {
                     calculateInfo(bill, numberOfPeople, tipPercent);
 
                     Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                     Bundle b = new Bundle();
 
-                    b.putDouble("@string/tipPercentKEY", tipPercent);
-                    b.putInt("@string/numberOfPeopleKEY", numberOfPeople);
-                    b.putDouble("@string/billKEY", bill);
-                    b.putDouble("@string/tipCostKEY", tipCost);
-                    b.putDouble("@string/billAfterKEY", billAfter);
-                    b.putDouble("@string/personOweKEY", personOwe);
+                    b.putDouble(getString(R.string.tipPercentKEY), tipPercent);
+                    b.putInt(getString(R.string.numberOfPeopleKEY), numberOfPeople);
+                    b.putDouble(getString(R.string.billKEY), bill);
+                    b.putDouble(getString(R.string.tipCostKEY), tipCost);
+                    b.putDouble(getString(R.string.billAfterKEY), billAfter);
+                    b.putDouble(getString(R.string.billAfterKEY), personOwe);
                     intent.putExtras(b);
                     startActivity(intent);
 
@@ -138,9 +138,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if(savedInstanceState != null){
-            billAmount.setText(String.valueOf(savedInstanceState.getInt("@string/BILLAMOUNTKEY")));
-            numPeople.setText(String.valueOf(savedInstanceState.getInt("@string/NUMPEOPLEKEY")));
-            customTip.setText(String.valueOf(savedInstanceState.getInt("@string/CUSTOMTIPKEY")));
+            billAmount.setText(String.valueOf(savedInstanceState.getInt(getString(R.string.BILLAMOUNTKEY))));
+            numPeople.setText(String.valueOf(savedInstanceState.getInt(getString(R.string.NUMPEOPLEKEY))));
+            customTip.setText(String.valueOf(savedInstanceState.getInt(getString(R.string.CUSTOMTIPKEY))));
         }
     }
 
@@ -202,9 +202,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("@string/BILLAMOUNTKEY", billAmount.getText().toString());
-        outState.putString("@string/NUMPEOPLEKEY", numPeople.getText().toString());
-        outState.putString("@string/CUSTOMTIPKEY", customTip.getText().toString());
+        outState.putString(getString(R.string.BILLAMOUNTKEY), billAmount.getText().toString());
+        outState.putString(getString(R.string.NUMPEOPLEKEY), numPeople.getText().toString());
+        outState.putString(getString(R.string.CUSTOMTIPKEY), customTip.getText().toString());
 
 
 

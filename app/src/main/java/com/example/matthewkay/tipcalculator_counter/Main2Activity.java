@@ -34,12 +34,12 @@ public class Main2Activity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
 
-        billBefore.setText(getResources().getString(R.string.billBeforeTip)+ String.format( "%.2f", b.getDouble("@string/billKEY")));
-        numpeople.setText(getResources().getString(R.string.numPeople)+ " "+ b.getInt("@string/numberOfPeopleKEY"));
-        tip.setText(getResources().getString(R.string.tip)+ String.format( "%.2f", b.getDouble("@string/tipPercentKEY")) + getResources().getString(R.string.percentSign));
-        billAfter.setText(getResources().getString(R.string.billAfterTip)+ String.format( "%.2f", b.getDouble("@string/billAfterKEY")));
-        perPerson.setText(getResources().getString(R.string.billPerPerson)+ String.format( "%.2f", b.getDouble("@string/personOweKEY")));
-        tipCost.setText(getResources().getString(R.string.tipCost)+ String.format( "%.2f", b.getDouble("@string/tipCostKEY")));
+        billBefore.setText(getResources().getString(R.string.billBeforeTip)+ String.format( "%.2f", b.getDouble(getString(R.string.billKEY))));
+        numpeople.setText(getResources().getString(R.string.numPeople)+ " "+ b.getInt(getString(R.string.numberOfPeopleKEY)));
+        tip.setText(getResources().getString(R.string.tip)+ String.format( "%.2f", b.getDouble(getString(R.string.tipPercentKEY))) + getResources().getString(R.string.percentSign));
+        billAfter.setText(getResources().getString(R.string.billAfterTip)+ String.format( "%.2f", b.getDouble(getString(R.string.billAfterKEY))));
+        perPerson.setText(getResources().getString(R.string.billPerPerson)+ String.format( "%.2f", b.getDouble(getString(R.string.personOweKEY))));
+        tipCost.setText(getResources().getString(R.string.tipCost)+ String.format( "%.2f", b.getDouble(getString(R.string.tipCostKEY))));
 
         back = (Button) findViewById(R.id.backID);
 
@@ -47,7 +47,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast toast = Toast.makeText(getApplicationContext(),"BACK TO CALCULATOR!!",Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),getString(R.string.backtocalc),Toast.LENGTH_SHORT);
                 toast.show();
                 finish();
             }

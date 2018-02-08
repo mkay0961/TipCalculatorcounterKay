@@ -23,6 +23,14 @@
     <string name="billPerPerson">Each Person Owes:  $</string>
     <string name="split_amount">Number Of People Splitting The Bill</string>
     <string name="blank"></string>
+    <string name="percent10mess">10% TIP!!</string>
+    <string name="percent15mess">15% TIP!!</string>
+    <string name="percent20mess">20% TIP!!</string>
+    <string name="percentCustomMess">CUSTOM TIP!!</string>
+    <string name="Calcinfo">CALCULATING INFO</string>
+    <string name="BillERROR">Bill Isnt High Enough!!!</string>
+    <string name="PeopleERROR">Not Enough People!!!!</string>
+    <string name="TipERROR">Tip Percentage Isnt High Enough!!!</string>
     <string name="billKEY">billKEY</string>
     <string name="numberOfPeopleKEY">numberOfPeopleKEY</string>
     <string name="tipPercentKEY">tipPercentKEY</string>
@@ -32,6 +40,8 @@
     <string name="BILLAMOUNTKEY">BILLAMOUNTKEY</string>
     <string name="NUMPEOPLEKEY">NUMPEOPLEKEY</string>
     <string name="CUSTOMTIPKEY">CUSTOMTIPKEY</string>
+    <string name="RESET">RESET!!!!!</string>
+    <string name="backtocalc">BACK TO CALCULATOR!!!!!</string>
 
 
 
