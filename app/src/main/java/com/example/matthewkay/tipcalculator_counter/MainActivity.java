@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                     b.putDouble(getString(R.string.billKEY), bill);
                     b.putDouble(getString(R.string.tipCostKEY), tipCost);
                     b.putDouble(getString(R.string.billAfterKEY), billAfter);
-                    b.putDouble(getString(R.string.billAfterKEY), personOwe);
+                    b.putDouble(getString(R.string.personOweKEY), personOwe);
                     intent.putExtras(b);
                     startActivity(intent);
 
